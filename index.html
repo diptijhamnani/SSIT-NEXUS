@@ -1,26 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description"
-        content="SSIT Nexus - A modern digital campus companion for Shree Swaminarayan Institute of Technology.">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
     <title>SSIT Nexus | Digital Campus</title>
 
-    <!-- Google Font -->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@500;600&display=swap"
+          rel="stylesheet">
 
     <!-- Icons -->
     <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
     <!-- Main CSS -->
     <link rel="stylesheet" href="style.css">
@@ -28,630 +25,314 @@
 
 <body>
 
-    <!-- =====================================================
-         LOADING / WELCOME SCREEN
-    ====================================================== -->
+    <!-- =================================================
+         WELCOME / LANDING PAGE
+    ================================================== -->
 
-    <div id="welcome-screen" class="welcome-screen">
+    <main class="landing-page">
 
-        <div class="welcome-content">
+        <!-- College Logo -->
+        <div class="college-logo">
+            <img src="ssit-logo.png"
+                 alt="Shree Swaminarayan Institute of Technology Logo">
+        </div>
 
-            <div class="logo-animation">
-                <div class="logo-circle">
-                    <span>SSIT</span>
+
+        <!-- Small Label -->
+        <p class="landing-label">
+            DIGITAL CAMPUS
+        </p>
+
+
+        <!-- Main Welcome -->
+        <h1>
+            Welcome to
+            <span>Shree Swaminarayan</span>
+            Institute of Technology
+        </h1>
+
+
+        <!-- Subtitle -->
+        <p class="landing-subtitle">
+            One campus. One space. Everything SSIT.
+        </p>
+
+
+        <!-- Voice Status -->
+        <button class="voice-button" id="voiceButton">
+            <i class="fa-solid fa-volume-high"></i>
+            <span>Listen to welcome</span>
+        </button>
+
+
+        <!-- Four Main Options -->
+        <section class="main-options">
+
+            <a href="#academics" class="main-option">
+
+                <div class="option-number">01</div>
+
+                <div class="option-icon">
+                    <i class="fa-solid fa-book-open"></i>
                 </div>
-            </div>
 
-            <p class="welcome-small">WELCOME TO</p>
+                <div class="option-text">
+                    <h2>Academics</h2>
+                    <p>Courses, timetable & study</p>
+                </div>
 
-            <h1>
-                Shree Swaminarayan<br>
-                Institute of Technology
-            </h1>
+                <i class="fa-solid fa-arrow-right option-arrow"></i>
 
-            <p class="welcome-tagline">
-                One campus. One space. Everything SSIT.
+            </a>
+
+
+            <a href="#campus" class="main-option">
+
+                <div class="option-number">02</div>
+
+                <div class="option-icon">
+                    <i class="fa-solid fa-building-columns"></i>
+                </div>
+
+                <div class="option-text">
+                    <h2>Campus</h2>
+                    <p>Explore SSIT & facilities</p>
+                </div>
+
+                <i class="fa-solid fa-arrow-right option-arrow"></i>
+
+            </a>
+
+
+            <a href="#student-life" class="main-option">
+
+                <div class="option-number">03</div>
+
+                <div class="option-icon">
+                    <i class="fa-solid fa-users"></i>
+                </div>
+
+                <div class="option-text">
+                    <h2>Student Life</h2>
+                    <p>Events, activities & community</p>
+                </div>
+
+                <i class="fa-solid fa-arrow-right option-arrow"></i>
+
+            </a>
+
+
+            <a href="#examination" class="main-option">
+
+                <div class="option-number">04</div>
+
+                <div class="option-icon">
+                    <i class="fa-solid fa-file-pen"></i>
+                </div>
+
+                <div class="option-text">
+                    <h2>Examination</h2>
+                    <p>Exams, results & updates</p>
+                </div>
+
+                <i class="fa-solid fa-arrow-right option-arrow"></i>
+
+            </a>
+
+        </section>
+
+
+        <!-- Bottom -->
+        <p class="landing-footer">
+            SSIT Nexus <span>•</span> Smart Digital Campus Companion
+        </p>
+
+    </main>
+
+
+    <!-- =================================================
+         CONTENT SECTIONS
+         These open when an option is clicked
+    ================================================== -->
+
+    <section id="academics" class="content-page">
+
+        <div class="content-inner">
+
+            <span class="section-number">01</span>
+
+            <h2>Academics</h2>
+
+            <p>
+                Everything related to your academic journey at SSIT,
+                thoughtfully brought together in one place.
             </p>
 
-            <div class="loading-line">
-                <span></span>
+            <div class="content-cards">
+
+                <div class="content-card">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <h3>Timetable</h3>
+                    <p>View your daily lectures and schedule.</p>
+                </div>
+
+                <div class="content-card">
+                    <i class="fa-solid fa-book"></i>
+                    <h3>Study Material</h3>
+                    <p>Access subjects, notes and learning resources.</p>
+                </div>
+
+                <div class="content-card">
+                    <i class="fa-solid fa-clipboard-check"></i>
+                    <h3>Assignments</h3>
+                    <p>Keep track of your academic tasks.</p>
+                </div>
+
             </div>
+
+            <a href="#" class="back-home">
+                ← Back to SSIT Nexus
+            </a>
 
         </div>
 
-    </div>
+    </section>
 
 
-    <!-- =====================================================
-         MAIN APP
-    ====================================================== -->
+    <section id="campus" class="content-page">
 
-    <div id="app" class="app">
+        <div class="content-inner">
 
-        <!-- SIDEBAR -->
+            <span class="section-number">02</span>
 
-        <aside class="sidebar" id="sidebar">
+            <h2>Campus</h2>
 
-            <div class="brand">
+            <p>
+                Discover the SSIT campus, departments,
+                facilities and important campus information.
+            </p>
 
-                <div class="brand-logo">
-                    SSIT
+            <div class="content-cards">
+
+                <div class="content-card">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <h3>Campus Map</h3>
+                    <p>Find important places around the campus.</p>
                 </div>
 
-                <div>
-                    <h2>SSIT Nexus</h2>
-                    <span>Digital Campus</span>
+                <div class="content-card">
+                    <i class="fa-solid fa-building"></i>
+                    <h3>Facilities</h3>
+                    <p>Explore campus facilities and resources.</p>
+                </div>
+
+                <div class="content-card">
+                    <i class="fa-solid fa-chalkboard-user"></i>
+                    <h3>Departments</h3>
+                    <p>Explore departments and faculty information.</p>
                 </div>
 
             </div>
 
+            <a href="#" class="back-home">
+                ← Back to SSIT Nexus
+            </a>
 
-            <!-- Navigation -->
+        </div>
 
-            <nav class="side-navigation">
+    </section>
 
-                <p class="nav-title">MAIN</p>
 
-                <a href="#home" class="nav-link active">
-                    <i class="fa-solid fa-house"></i>
-                    <span>Home</span>
-                </a>
+    <section id="student-life" class="content-page">
 
-                <a href="#notices" class="nav-link">
+        <div class="content-inner">
+
+            <span class="section-number">03</span>
+
+            <h2>Student Life</h2>
+
+            <p>
+                A space for the experiences that make
+                college life more than just classrooms.
+            </p>
+
+            <div class="content-cards">
+
+                <div class="content-card">
+                    <i class="fa-solid fa-calendar-star"></i>
+                    <h3>Events</h3>
+                    <p>College events and upcoming activities.</p>
+                </div>
+
+                <div class="content-card">
+                    <i class="fa-solid fa-people-group"></i>
+                    <h3>Activities</h3>
+                    <p>Student activities and campus participation.</p>
+                </div>
+
+                <div class="content-card">
+                    <i class="fa-solid fa-bullhorn"></i>
+                    <h3>Notices</h3>
+                    <p>Important announcements from SSIT.</p>
+                </div>
+
+            </div>
+
+            <a href="#" class="back-home">
+                ← Back to SSIT Nexus
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <section id="examination" class="content-page">
+
+        <div class="content-inner">
+
+            <span class="section-number">04</span>
+
+            <h2>Examination</h2>
+
+            <p>
+                Stay updated with examinations,
+                schedules, results and academic updates.
+            </p>
+
+            <div class="content-cards">
+
+                <div class="content-card">
+                    <i class="fa-solid fa-file-lines"></i>
+                    <h3>Exam Schedule</h3>
+                    <p>Check upcoming examination schedules.</p>
+                </div>
+
+                <div class="content-card">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <h3>Results</h3>
+                    <p>View examination results and academic progress.</p>
+                </div>
+
+                <div class="content-card">
                     <i class="fa-solid fa-bell"></i>
-                    <span>Notices</span>
-                    <small class="notification-count">2</small>
-                </a>
-
-                <a href="#academics" class="nav-link">
-                    <i class="fa-solid fa-graduation-cap"></i>
-                    <span>Academics</span>
-                </a>
-
-                <a href="#timetable" class="nav-link">
-                    <i class="fa-regular fa-calendar"></i>
-                    <span>Timetable</span>
-                </a>
-
-
-                <p class="nav-title">STUDENT</p>
-
-                <a href="#fees" class="nav-link">
-                    <i class="fa-solid fa-wallet"></i>
-                    <span>Fees</span>
-                </a>
-
-                <a href="#exams" class="nav-link">
-                    <i class="fa-solid fa-file-pen"></i>
-                    <span>Examination</span>
-                </a>
-
-                <a href="#attendance" class="nav-link">
-                    <i class="fa-solid fa-chart-simple"></i>
-                    <span>Attendance</span>
-                </a>
-
-                <a href="#assignments" class="nav-link">
-                    <i class="fa-solid fa-book-open"></i>
-                    <span>Assignments</span>
-                </a>
-
-
-                <p class="nav-title">CAMPUS</p>
-
-                <a href="#events" class="nav-link">
-                    <i class="fa-solid fa-calendar-days"></i>
-                    <span>Events</span>
-                </a>
-
-                <a href="#campus" class="nav-link">
-                    <i class="fa-solid fa-building-columns"></i>
-                    <span>Campus</span>
-                </a>
-
-                <a href="#faculty" class="nav-link">
-                    <i class="fa-solid fa-users"></i>
-                    <span>Faculty</span>
-                </a>
-
-                <a href="#contact" class="nav-link">
-                    <i class="fa-solid fa-phone"></i>
-                    <span>Contact & Help</span>
-                </a>
-
-            </nav>
-
-
-            <!-- Sidebar Bottom -->
-
-            <div class="sidebar-bottom">
-
-                <a href="#profile" class="profile-mini">
-
-                    <div class="profile-avatar">
-                        <i class="fa-solid fa-user"></i>
-                    </div>
-
-                    <div>
-                        <strong>Student</strong>
-                        <span>My Profile</span>
-                    </div>
-
-                </a>
+                    <h3>Exam Updates</h3>
+                    <p>Important examination announcements.</p>
+                </div>
 
             </div>
 
-        </aside>
+            <a href="#" class="back-home">
+                ← Back to SSIT Nexus
+            </a>
 
+        </div>
 
-        <!-- =================================================
-             MAIN CONTENT
-        ================================================== -->
+    </section>
 
-        <main class="main-content">
 
+    <!-- JavaScript -->
+    <script src="script.js"></script>
 
-            <!-- TOP BAR -->
-
-            <header class="topbar">
-
-                <button class="menu-button" id="menu-button">
-                    <i class="fa-solid fa-bars"></i>
-                </button>
-
-                <div class="page-label">
-                    <span>SSIT Nexus</span>
-                </div>
-
-                <div class="top-actions">
-
-                    <button class="icon-button" id="search-button">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </button>
-
-                    <button class="icon-button" id="notification-button">
-                        <i class="fa-regular fa-bell"></i>
-                    </button>
-
-                    <button class="profile-button">
-                        <div class="profile-avatar small">
-                            <i class="fa-solid fa-user"></i>
-                        </div>
-                    </button>
-
-                </div>
-
-            </header>
-
-
-            <!-- =============================================
-                 HOME
-            ============================================== -->
-
-            <section id="home" class="page-section home-section">
-
-                <div class="hero">
-
-                    <div class="hero-text">
-
-                        <span class="eyebrow">
-                            YOUR DIGITAL CAMPUS
-                        </span>
-
-                        <h1>
-                            Good day,
-                            <span>Student.</span>
-                        </h1>
-
-                        <p>
-                            Everything you need at SSIT,
-                            thoughtfully brought together in one place.
-                        </p>
-
-                        <div class="hero-buttons">
-
-                            <a href="#academics" class="primary-button">
-                                Explore Campus
-                                <i class="fa-solid fa-arrow-right"></i>
-                            </a>
-
-                            <a href="#notices" class="secondary-button">
-                                View Updates
-                            </a>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="hero-decoration">
-
-                        <div class="floating-card card-one">
-                            <i class="fa-solid fa-graduation-cap"></i>
-                            <span>Academics</span>
-                        </div>
-
-                        <div class="floating-card card-two">
-                            <i class="fa-solid fa-bell"></i>
-                            <span>Updates</span>
-                        </div>
-
-                        <div class="hero-circle">
-                            <span>SSIT</span>
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-                <!-- TODAY AT SSIT -->
-
-                <div class="section-heading">
-
-                    <div>
-                        <span class="section-eyebrow">TODAY</span>
-                        <h2>Today at SSIT</h2>
-                    </div>
-
-                    <span class="date-text" id="current-date">
-                        Today
-                    </span>
-
-                </div>
-
-
-                <div class="quick-grid">
-
-                    <div class="quick-card">
-
-                        <div class="quick-icon">
-                            <i class="fa-solid fa-bell"></i>
-                        </div>
-
-                        <div>
-                            <span>New Notices</span>
-                            <strong>02</strong>
-                        </div>
-
-                    </div>
-
-
-                    <div class="quick-card">
-
-                        <div class="quick-icon">
-                            <i class="fa-regular fa-calendar"></i>
-                        </div>
-
-                        <div>
-                            <span>Today's Lectures</span>
-                            <strong>03</strong>
-                        </div>
-
-                    </div>
-
-
-                    <div class="quick-card">
-
-                        <div class="quick-icon">
-                            <i class="fa-solid fa-file-pen"></i>
-                        </div>
-
-                        <div>
-                            <span>Upcoming Exam</span>
-                            <strong>01</strong>
-                        </div>
-
-                    </div>
-
-
-                    <div class="quick-card">
-
-                        <div class="quick-icon">
-                            <i class="fa-solid fa-wallet"></i>
-                        </div>
-
-                        <div>
-                            <span>Fee Status</span>
-                            <strong>View</strong>
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-                <!-- FEATURE CARDS -->
-
-                <div class="section-heading">
-
-                    <div>
-                        <span class="section-eyebrow">EXPLORE</span>
-                        <h2>Everything SSIT</h2>
-                    </div>
-
-                </div>
-
-
-                <div class="feature-grid">
-
-
-                    <a href="#academics" class="feature-card">
-
-                        <div class="feature-icon">
-                            <i class="fa-solid fa-graduation-cap"></i>
-                        </div>
-
-                        <div class="feature-content">
-                            <h3>Academics</h3>
-                            <p>Courses, subjects, syllabus & faculty.</p>
-                        </div>
-
-                        <i class="fa-solid fa-arrow-up-right-from-square feature-arrow"></i>
-
-                    </a>
-
-
-                    <a href="#fees" class="feature-card">
-
-                        <div class="feature-icon">
-                            <i class="fa-solid fa-wallet"></i>
-                        </div>
-
-                        <div class="feature-content">
-                            <h3>Fees</h3>
-                            <p>Fee structure, dues & payment information.</p>
-                        </div>
-
-                        <i class="fa-solid fa-arrow-up-right-from-square feature-arrow"></i>
-
-                    </a>
-
-
-                    <a href="#exams" class="feature-card">
-
-                        <div class="feature-icon">
-                            <i class="fa-solid fa-file-pen"></i>
-                        </div>
-
-                        <div class="feature-content">
-                            <h3>Examination</h3>
-                            <p>Exam schedules, practicals & results.</p>
-                        </div>
-
-                        <i class="fa-solid fa-arrow-up-right-from-square feature-arrow"></i>
-
-                    </a>
-
-
-                    <a href="#events" class="feature-card">
-
-                        <div class="feature-icon">
-                            <i class="fa-solid fa-calendar-days"></i>
-                        </div>
-
-                        <div class="feature-content">
-                            <h3>Events</h3>
-                            <p>Workshops, seminars & campus activities.</p>
-                        </div>
-
-                        <i class="fa-solid fa-arrow-up-right-from-square feature-arrow"></i>
-
-                    </a>
-
-
-                    <a href="#attendance" class="feature-card">
-
-                        <div class="feature-icon">
-                            <i class="fa-solid fa-chart-simple"></i>
-                        </div>
-
-                        <div class="feature-content">
-                            <h3>Attendance</h3>
-                            <p>Track your subject-wise attendance.</p>
-                        </div>
-
-                        <i class="fa-solid fa-arrow-up-right-from-square feature-arrow"></i>
-
-                    </a>
-
-
-                    <a href="#campus" class="feature-card">
-
-                        <div class="feature-icon">
-                            <i class="fa-solid fa-building-columns"></i>
-                        </div>
-
-                        <div class="feature-content">
-                            <h3>Campus</h3>
-                            <p>Explore facilities, labs & library.</p>
-                        </div>
-
-                        <i class="fa-solid fa-arrow-up-right-from-square feature-arrow"></i>
-
-                    </a>
-
-                </div>
-
-            </section>
-
-
-            <!-- =============================================
-                 NOTICES
-            ============================================== -->
-
-            <section id="notices" class="page-section">
-
-                <div class="section-heading">
-                    <div>
-                        <span class="section-eyebrow">UPDATES</span>
-                        <h2>Notices & Announcements</h2>
-                    </div>
-                </div>
-
-                <div class="notice-list">
-
-                    <article class="notice-card">
-
-                        <div class="notice-date">
-                            <strong>02</strong>
-                            <span>OCT</span>
-                        </div>
-
-                        <div class="notice-content">
-                            <span class="notice-tag">IMPORTANT</span>
-                            <h3>Latest College Announcement</h3>
-                            <p>Important information and updates for students.</p>
-                        </div>
-
-                        <i class="fa-solid fa-chevron-right"></i>
-
-                    </article>
-
-
-                    <article class="notice-card">
-
-                        <div class="notice-date">
-                            <strong>01</strong>
-                            <span>OCT</span>
-                        </div>
-
-                        <div class="notice-content">
-                            <span class="notice-tag">ACADEMIC</span>
-                            <h3>Academic Update</h3>
-                            <p>Check the latest academic information.</p>
-                        </div>
-
-                        <i class="fa-solid fa-chevron-right"></i>
-
-                    </article>
-
-                </div>
-
-            </section>
-
-
-            <!-- =============================================
-                 ACADEMICS
-            ============================================== -->
-
-            <section id="academics" class="page-section">
-
-                <div class="section-heading">
-                    <div>
-                        <span class="section-eyebrow">LEARNING</span>
-                        <h2>Academics</h2>
-                    </div>
-                </div>
-
-                <div class="academic-grid">
-
-                    <div class="info-card">
-                        <i class="fa-solid fa-book"></i>
-                        <h3>Courses & Subjects</h3>
-                        <p>Explore courses, semesters and subjects.</p>
-                    </div>
-
-                    <div class="info-card">
-                        <i class="fa-solid fa-file-lines"></i>
-                        <h3>Syllabus</h3>
-                        <p>Access your academic syllabus.</p>
-                    </div>
-
-                    <div class="info-card">
-                        <i class="fa-solid fa-users"></i>
-                        <h3>Faculty</h3>
-                        <p>Find faculty and department information.</p>
-                    </div>
-
-                    <div class="info-card">
-                        <i class="fa-solid fa-calendar"></i>
-                        <h3>Academic Calendar</h3>
-                        <p>Important academic dates and schedules.</p>
-                    </div>
-
-                </div>
-
-            </section>
-
-
-            <!-- =============================================
-                 TIMETABLE
-            ============================================== -->
-
-            <section id="timetable" class="page-section">
-
-                <div class="section-heading">
-                    <div>
-                        <span class="section-eyebrow">SCHEDULE</span>
-                        <h2>Timetable</h2>
-                    </div>
-                </div>
-
-                <div class="schedule-card">
-
-                    <div class="schedule-header">
-                        <span>Today's Schedule</span>
-                        <i class="fa-regular fa-clock"></i>
-                    </div>
-
-                    <div class="schedule-item">
-                        <span>09:00 AM</span>
-                        <strong>Subject / Lecture</strong>
-                        <small>Room 101</small>
-                    </div>
-
-                    <div class="schedule-item">
-                        <span>11:00 AM</span>
-                        <strong>Subject / Lecture</strong>
-                        <small>Room 102</small>
-                    </div>
-
-                    <div class="schedule-item">
-                        <span>01:00 PM</span>
-                        <strong>Practical / Lab</strong>
-                        <small>Computer Lab</small>
-                    </div>
-
-                </div>
-
-            </section>
-
-
-            <!-- =============================================
-                 FEES
-            ============================================== -->
-
-            <section id="fees" class="page-section">
-
-                <div class="section-heading">
-                    <div>
-                        <span class="section-eyebrow">FINANCE</span>
-                        <h2>Fees</h2>
-                    </div>
-                </div>
-
-                <div class="academic-grid">
-
-                    <div class="info-card">
-                        <i class="fa-solid fa-indian-rupee-sign"></i>
-                        <h3>Fee Structure</h3>
-                        <p>View semester-wise fee details.</p>
-                    </div>
-
-                    <div class="info-card">
-                        <i class="fa-regular fa-calendar-check"></i>
-                        <h3>Due Dates</h3>
-                        <p>Keep track of important payment dates.</p>
-                    </div>
-
-                    <div class="info-card">
-                        <i class="fa-solid fa-receipt"></i>
-                        <h3>Payment Information</h3>
-                        <p>Information about fee payment.</p>
-                    </div>
-
-                    <div class="info-card">
-                        <i class="fa-solid fa-circle-check"></i>
-                        <h3>Fee Status</h3>
-                        <p>Check your current
+</body>
+</html>

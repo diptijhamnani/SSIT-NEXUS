@@ -6,16 +6,18 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
 
-    <title>SSIT Nexus | Digital Campus</title>
+    <meta name="theme-color" content="#151311">
+
+    <title>SSIT Nexus | Smart Student Campus</title>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@500;600&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
           rel="stylesheet">
 
-    <!-- Icons -->
+    <!-- Font Awesome -->
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
@@ -25,314 +27,664 @@
 
 <body>
 
-    <!-- =================================================
-         WELCOME / LANDING PAGE
-    ================================================== -->
+    <!-- =====================================================
+         FUTURISTIC INTRO SCREEN
+    ====================================================== -->
 
-    <main class="landing-page">
+    <div class="intro-screen" id="introScreen">
 
-        <!-- College Logo -->
-        <div class="college-logo">
-            <img src="ssit-logo.png"
-                 alt="Shree Swaminarayan Institute of Technology Logo">
+        <!-- Technology background -->
+        <div class="intro-grid"></div>
+
+        <div class="intro-code intro-code-one">
+            010101 110010 001101
         </div>
 
+        <div class="intro-code intro-code-two">
+            &lt;/&gt; { SSIT } 01
+        </div>
 
-        <!-- Small Label -->
-        <p class="landing-label">
-            DIGITAL CAMPUS
-        </p>
+        <div class="intro-code intro-code-three">
+            101010 001011 110101
+        </div>
 
+        <!-- Circuit lines -->
+        <div class="circuit-line circuit-one"></div>
+        <div class="circuit-line circuit-two"></div>
+        <div class="circuit-line circuit-three"></div>
 
-        <!-- Main Welcome -->
-        <h1>
-            Welcome to
-            <span>Shree Swaminarayan</span>
-            Institute of Technology
-        </h1>
+        <!-- Glowing nodes -->
+        <div class="tech-node node-one"></div>
+        <div class="tech-node node-two"></div>
+        <div class="tech-node node-three"></div>
+        <div class="tech-node node-four"></div>
 
+        <div class="intro-content">
 
-        <!-- Subtitle -->
-        <p class="landing-subtitle">
-            One campus. One space. Everything SSIT.
-        </p>
+            <div class="intro-status">
+                <span class="status-dot"></span>
+                SYSTEM INITIALIZING
+            </div>
 
+            <div class="intro-logo">
+                <img src="ssit-logo.png"
+                     alt="SSIT Logo">
+            </div>
 
-        <!-- Voice Status -->
-        <button class="voice-button" id="voiceButton">
-            <i class="fa-solid fa-volume-high"></i>
-            <span>Listen to welcome</span>
-        </button>
-
-
-        <!-- Four Main Options -->
-        <section class="main-options">
-
-            <a href="#academics" class="main-option">
-
-                <div class="option-number">01</div>
-
-                <div class="option-icon">
-                    <i class="fa-solid fa-book-open"></i>
-                </div>
-
-                <div class="option-text">
-                    <h2>Academics</h2>
-                    <p>Courses, timetable & study</p>
-                </div>
-
-                <i class="fa-solid fa-arrow-right option-arrow"></i>
-
-            </a>
-
-
-            <a href="#campus" class="main-option">
-
-                <div class="option-number">02</div>
-
-                <div class="option-icon">
-                    <i class="fa-solid fa-building-columns"></i>
-                </div>
-
-                <div class="option-text">
-                    <h2>Campus</h2>
-                    <p>Explore SSIT & facilities</p>
-                </div>
-
-                <i class="fa-solid fa-arrow-right option-arrow"></i>
-
-            </a>
-
-
-            <a href="#student-life" class="main-option">
-
-                <div class="option-number">03</div>
-
-                <div class="option-icon">
-                    <i class="fa-solid fa-users"></i>
-                </div>
-
-                <div class="option-text">
-                    <h2>Student Life</h2>
-                    <p>Events, activities & community</p>
-                </div>
-
-                <i class="fa-solid fa-arrow-right option-arrow"></i>
-
-            </a>
-
-
-            <a href="#examination" class="main-option">
-
-                <div class="option-number">04</div>
-
-                <div class="option-icon">
-                    <i class="fa-solid fa-file-pen"></i>
-                </div>
-
-                <div class="option-text">
-                    <h2>Examination</h2>
-                    <p>Exams, results & updates</p>
-                </div>
-
-                <i class="fa-solid fa-arrow-right option-arrow"></i>
-
-            </a>
-
-        </section>
-
-
-        <!-- Bottom -->
-        <p class="landing-footer">
-            SSIT Nexus <span>•</span> Smart Digital Campus Companion
-        </p>
-
-    </main>
-
-
-    <!-- =================================================
-         CONTENT SECTIONS
-         These open when an option is clicked
-    ================================================== -->
-
-    <section id="academics" class="content-page">
-
-        <div class="content-inner">
-
-            <span class="section-number">01</span>
-
-            <h2>Academics</h2>
-
-            <p>
-                Everything related to your academic journey at SSIT,
-                thoughtfully brought together in one place.
+            <p class="intro-small">
+                DIGITAL CAMPUS SYSTEM
             </p>
 
-            <div class="content-cards">
+            <h1 class="intro-title">
+                SSIT
+                <span>NEXUS</span>
+            </h1>
 
-                <div class="content-card">
-                    <i class="fa-solid fa-calendar-days"></i>
-                    <h3>Timetable</h3>
-                    <p>View your daily lectures and schedule.</p>
-                </div>
+            <p class="intro-loading" id="introLoading">
+                Connecting your campus...
+            </p>
 
-                <div class="content-card">
-                    <i class="fa-solid fa-book"></i>
-                    <h3>Study Material</h3>
-                    <p>Access subjects, notes and learning resources.</p>
-                </div>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
 
-                <div class="content-card">
-                    <i class="fa-solid fa-clipboard-check"></i>
-                    <h3>Assignments</h3>
-                    <p>Keep track of your academic tasks.</p>
-                </div>
+            <p class="intro-version">
+                SYSTEM 01 / STUDENT NETWORK
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         MAIN WEBSITE
+    ====================================================== -->
+
+    <div class="site-wrapper" id="siteWrapper">
+
+        <!-- =================================================
+             NAVIGATION
+        ================================================== -->
+
+        <header class="main-header">
+
+            <div class="header-inner">
+
+                <a href="#home" class="brand">
+
+                    <div class="brand-logo">
+                        <img src="ssit-logo.png"
+                             alt="SSIT Logo">
+                    </div>
+
+                    <div class="brand-text">
+                        <strong>SSIT</strong>
+                        <span>NEXUS</span>
+                    </div>
+
+                </a>
+
+
+                <nav class="main-nav">
+
+                    <a href="#home" class="nav-link active">
+                        Home
+                    </a>
+
+                    <a href="#academics" class="nav-link">
+                        Academics
+                    </a>
+
+                    <a href="#campus" class="nav-link">
+                        Campus
+                    </a>
+
+                    <a href="#student-life" class="nav-link">
+                        Student Life
+                    </a>
+
+                    <a href="#examination" class="nav-link">
+                        Examination
+                    </a>
+
+                </nav>
+
+
+                <button class="menu-button"
+                        id="menuButton"
+                        aria-label="Open menu">
+
+                    <i class="fa-solid fa-bars"></i>
+
+                </button>
 
             </div>
 
-            <a href="#" class="back-home">
-                ← Back to SSIT Nexus
-            </a>
+        </header>
+
+
+        <!-- =================================================
+             MOBILE MENU
+        ================================================== -->
+
+        <div class="mobile-menu" id="mobileMenu">
+
+            <a href="#home">Home</a>
+            <a href="#academics">Academics</a>
+            <a href="#campus">Campus</a>
+            <a href="#student-life">Student Life</a>
+            <a href="#examination">Examination</a>
 
         </div>
 
-    </section>
 
+        <!-- =================================================
+             HOME / HERO
+        ================================================== -->
 
-    <section id="campus" class="content-page">
+        <main id="home">
 
-        <div class="content-inner">
+            <!-- Technology background -->
 
-            <span class="section-number">02</span>
+            <div class="tech-background"
+                 aria-hidden="true">
 
-            <h2>Campus</h2>
+                <div class="tech-grid"></div>
 
-            <p>
-                Discover the SSIT campus, departments,
-                facilities and important campus information.
-            </p>
+                <div class="tech-glow glow-one"></div>
+                <div class="tech-glow glow-two"></div>
+                <div class="tech-glow glow-three"></div>
 
-            <div class="content-cards">
-
-                <div class="content-card">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <h3>Campus Map</h3>
-                    <p>Find important places around the campus.</p>
+                <div class="binary binary-one">
+                    01010101010100101010
                 </div>
 
-                <div class="content-card">
-                    <i class="fa-solid fa-building"></i>
-                    <h3>Facilities</h3>
-                    <p>Explore campus facilities and resources.</p>
+                <div class="binary binary-two">
+                    10100110101001010101
                 </div>
 
-                <div class="content-card">
-                    <i class="fa-solid fa-chalkboard-user"></i>
-                    <h3>Departments</h3>
-                    <p>Explore departments and faculty information.</p>
+                <div class="binary binary-three">
+                    00110101101011001010
                 </div>
+
+                <div class="floating-symbol symbol-one">
+                    &lt;/&gt;
+                </div>
+
+                <div class="floating-symbol symbol-two">
+                    { }
+                </div>
+
+                <div class="floating-symbol symbol-three">
+                    &lt;&gt;
+                </div>
+
+                <div class="floating-symbol symbol-four">
+                    01
+                </div>
+
+                <div class="data-line data-line-one"></div>
+                <div class="data-line data-line-two"></div>
+                <div class="data-line data-line-three"></div>
+
+                <div class="connection-node connection-one"></div>
+                <div class="connection-node connection-two"></div>
+                <div class="connection-node connection-three"></div>
+                <div class="connection-node connection-four"></div>
 
             </div>
 
-            <a href="#" class="back-home">
-                ← Back to SSIT Nexus
-            </a>
 
-        </div>
+            <!-- =================================================
+                 HERO CONTENT
+            ================================================== -->
 
-    </section>
+            <section class="hero-section">
+
+                <div class="hero-content">
+
+                    <div class="hero-badge">
+                        <span class="live-dot"></span>
+                        STUDENT DIGITAL CAMPUS
+                    </div>
 
 
-    <section id="student-life" class="content-page">
+                    <p class="hero-overline">
+                        SHREE SWAMINARAYAN INSTITUTE OF TECHNOLOGY
+                    </p>
 
-        <div class="content-inner">
 
-            <span class="section-number">03</span>
+                    <h1 class="hero-title">
 
-            <h2>Student Life</h2>
+                        Welcome to
 
-            <p>
-                A space for the experiences that make
-                college life more than just classrooms.
-            </p>
+                        <span>
+                            SSIT Nexus
+                        </span>
 
-            <div class="content-cards">
+                    </h1>
 
-                <div class="content-card">
-                    <i class="fa-solid fa-calendar-star"></i>
-                    <h3>Events</h3>
-                    <p>College events and upcoming activities.</p>
+
+                    <p class="hero-description">
+                        Your digital space for academics,
+                        campus life, examinations and
+                        everything that matters at SSIT.
+                    </p>
+
+
+                    <!-- Voice -->
+
+                    <div class="welcome-voice">
+
+                        <button class="voice-button"
+                                id="voiceButton">
+
+                            <span class="voice-icon">
+                                <i class="fa-solid fa-volume-high"></i>
+                            </span>
+
+                            <span>
+                                Listen to welcome
+                            </span>
+
+                            <span class="voice-wave">
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                            </span>
+
+                        </button>
+
+                        <!--
+                        Optional real female voice:
+                        Upload welcome.mp3 and uncomment this.
+                        -->
+
+                        <!--
+                        <audio id="welcomeAudio"
+                               src="welcome.mp3"
+                               preload="auto">
+                        </audio>
+                        -->
+
+                    </div>
+
+
+                    <button class="enter-button"
+                            id="enterButton">
+
+                        <span>ENTER SSIT NEXUS</span>
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </button>
+
+
+                    <div class="hero-meta">
+
+                        <span>
+                            <i class="fa-solid fa-circle"></i>
+                            SYSTEM ONLINE
+                        </span>
+
+                        <span>
+                            NEXUS / 01
+                        </span>
+
+                    </div>
+
                 </div>
 
-                <div class="content-card">
-                    <i class="fa-solid fa-people-group"></i>
-                    <h3>Activities</h3>
-                    <p>Student activities and campus participation.</p>
+
+                <!-- Hero visual -->
+
+                <div class="hero-visual">
+
+                    <div class="tech-orbit orbit-one"></div>
+                    <div class="tech-orbit orbit-two"></div>
+                    <div class="tech-orbit orbit-three"></div>
+
+                    <div class="hero-center-card">
+
+                        <div class="mini-terminal">
+
+                            <div class="terminal-top">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+
+                            <div class="terminal-code">
+
+                                <p>
+                                    <span>01</span>
+                                    student.network
+                                </p>
+
+                                <p>
+                                    <span>02</span>
+                                    campus.connected
+                                </p>
+
+                                <p>
+                                    <span>03</span>
+                                    knowledge.online
+                                </p>
+
+                                <p class="terminal-cursor">
+                                    _
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="hero-center-label">
+                            SSIT
+                            <small>CONNECTED</small>
+                        </div>
+
+                    </div>
+
                 </div>
 
-                <div class="content-card">
-                    <i class="fa-solid fa-bullhorn"></i>
-                    <h3>Notices</h3>
-                    <p>Important announcements from SSIT.</p>
+            </section>
+
+
+            <!-- =================================================
+                 SEARCH
+            ================================================== -->
+
+            <section class="search-section">
+
+                <div class="section-container">
+
+                    <div class="search-heading">
+
+                        <span>
+                            QUICK FIND
+                        </span>
+
+                        <h2>
+                            Search your campus
+                        </h2>
+
+                    </div>
+
+
+                    <div class="search-box">
+
+                        <i class="fa-solid fa-magnifying-glass"></i>
+
+                        <input
+                            type="search"
+                            id="campusSearch"
+                            placeholder="Search anything at SSIT..."
+                            autocomplete="off">
+
+                        <kbd>
+                            /
+                        </kbd>
+
+                    </div>
+
+
+                    <div class="search-results"
+                         id="searchResults">
+
+                    </div>
+
                 </div>
 
-            </div>
-
-            <a href="#" class="back-home">
-                ← Back to SSIT Nexus
-            </a>
-
-        </div>
-
-    </section>
+            </section>
 
 
-    <section id="examination" class="content-page">
+            <!-- =================================================
+                 FOUR MAIN OPTIONS
+            ================================================== -->
 
-        <div class="content-inner">
+            <section class="main-options-section">
 
-            <span class="section-number">04</span>
+                <div class="section-container">
 
-            <h2>Examination</h2>
+                    <div class="section-heading">
 
-            <p>
-                Stay updated with examinations,
-                schedules, results and academic updates.
-            </p>
+                        <span class="section-kicker">
+                            EXPLORE NEXUS
+                        </span>
 
-            <div class="content-cards">
+                        <h2>
+                            Everything you need,
+                            <em>in one space.</em>
+                        </h2>
 
-                <div class="content-card">
-                    <i class="fa-solid fa-file-lines"></i>
-                    <h3>Exam Schedule</h3>
-                    <p>Check upcoming examination schedules.</p>
+                        <p>
+                            Explore the digital side of your
+                            SSIT student journey.
+                        </p>
+
+                    </div>
+
+
+                    <div class="main-options-grid">
+
+
+                        <!-- ACADEMICS -->
+
+                        <a href="#academics"
+                           class="nexus-card"
+                           data-section="academics">
+
+                            <div class="card-number">
+                                01
+                            </div>
+
+                            <div class="card-icon">
+                                <i class="fa-solid fa-book-open"></i>
+                            </div>
+
+                            <div class="card-content">
+
+                                <span>
+                                    LEARN
+                                </span>
+
+                                <h3>
+                                    Academics
+                                </h3>
+
+                                <p>
+                                    Subjects, timetable,
+                                    study material & assignments.
+                                </p>
+
+                            </div>
+
+                            <div class="card-arrow">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </div>
+
+                            <div class="card-code">
+                                &lt;ACADEMICS /&gt;
+                            </div>
+
+                        </a>
+
+
+                        <!-- CAMPUS -->
+
+                        <a href="#campus"
+                           class="nexus-card"
+                           data-section="campus">
+
+                            <div class="card-number">
+                                02
+                            </div>
+
+                            <div class="card-icon">
+                                <i class="fa-solid fa-building-columns"></i>
+                            </div>
+
+                            <div class="card-content">
+
+                                <span>
+                                    DISCOVER
+                                </span>
+
+                                <h3>
+                                    Campus
+                                </h3>
+
+                                <p>
+                                    Facilities, departments,
+                                    map & campus information.
+                                </p>
+
+                            </div>
+
+                            <div class="card-arrow">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </div>
+
+                            <div class="card-code">
+                                &lt;CAMPUS /&gt;
+                            </div>
+
+                        </a>
+
+
+                        <!-- STUDENT LIFE -->
+
+                        <a href="#student-life"
+                           class="nexus-card"
+                           data-section="student-life">
+
+                            <div class="card-number">
+                                03
+                            </div>
+
+                            <div class="card-icon">
+                                <i class="fa-solid fa-users"></i>
+                            </div>
+
+                            <div class="card-content">
+
+                                <span>
+                                    EXPERIENCE
+                                </span>
+
+                                <h3>
+                                    Student Life
+                                </h3>
+
+                                <p>
+                                    Events, activities,
+                                    clubs & campus community.
+                                </p>
+
+                            </div>
+
+                            <div class="card-arrow">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </div>
+
+                            <div class="card-code">
+                                &lt;STUDENT_LIFE /&gt;
+                            </div>
+
+                        </a>
+
+
+                        <!-- EXAMINATION -->
+
+                        <a href="#examination"
+                           class="nexus-card"
+                           data-section="examination">
+
+                            <div class="card-number">
+                                04
+                            </div>
+
+                            <div class="card-icon">
+                                <i class="fa-solid fa-file-pen"></i>
+                            </div>
+
+                            <div class="card-content">
+
+                                <span>
+                                    ACHIEVE
+                                </span>
+
+                                <h3>
+                                    Examination
+                                </h3>
+
+                                <p>
+                                    Exam schedules, results,
+                                    notices & updates.
+                                </p>
+
+                            </div>
+
+                            <div class="card-arrow">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </div>
+
+                            <div class="card-code">
+                                &lt;EXAM /&gt;
+                            </div>
+
+                        </a>
+
+
+                    </div>
+
                 </div>
 
-                <div class="content-card">
-                    <i class="fa-solid fa-chart-line"></i>
-                    <h3>Results</h3>
-                    <p>View examination results and academic progress.</p>
-                </div>
-
-                <div class="content-card">
-                    <i class="fa-solid fa-bell"></i>
-                    <h3>Exam Updates</h3>
-                    <p>Important examination announcements.</p>
-                </div>
-
-            </div>
-
-            <a href="#" class="back-home">
-                ← Back to SSIT Nexus
-            </a>
-
-        </div>
-
-    </section>
+            </section>
 
 
-    <!-- JavaScript -->
-    <script src="script.js"></script>
+            <!-- =================================================
+                 TODAY AT SSIT
+            ================================================== -->
 
-</body>
-</html>
+            <section class="today-section">
+
+                <div class="section-container">
+
+                    <div class="today-layout">
+
+                        <div class="today-intro">
+
+                            <span class="section-kicker">
+                                CAMPUS / LIVE
+                            </span>
+
+                            <h2>
+                                Today at
+                                <em>SSIT</em>
+                            </h2>
+
+                            <p>
+                                A quick view of what is
+                                happening across your campus.
+                            </p>
+
+                            <div class="live-indicator">
+                                <span></span>
+                                LIVE CAMPUS PULSE
+                            </div>
+
+                        </div>
+
+
+                        <div class="today-timeline">
+
+
+                            <div class="timeline-item">
+
+                                <div class="timeline-time">
+                                    09:00
